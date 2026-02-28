@@ -31,6 +31,11 @@
         
         if (!hamburger || !navWrapper) return;
 
+        // Initialize: Add hidden class on page load for mobile
+        if (window.innerWidth <= 768) {
+            navWrapper.classList.add('hidden');
+        }
+
         // Toggle menu on hamburger click
         hamburger.addEventListener('click', function(e) {
             e.stopPropagation();
@@ -50,7 +55,7 @@
         // Close menu when clicking outside
         document.addEventListener('click', function(e) {
             var isClickInNav = e.target.closest('.navbar');
-            if (!isClickInNav) {
+            if (!isClickInNav && window.innerWidth <= 768) {
                 hamburger.classList.remove('active');
                 navWrapper.classList.add('hidden');
             }
@@ -70,6 +75,9 @@
                         link.setAttribute('aria-expanded', 'false');
                     }
                 });
+            } else {
+                hamburger.classList.remove('active');
+                navWrapper.classList.add('hidden');
             }
         });
     }
