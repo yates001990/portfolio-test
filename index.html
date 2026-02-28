@@ -3,43 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Michael - Cybersecurity Professional specializing in Offensive Security and Network Penetration Testing">
-    <title>Michael | Cybersecurity Professional</title>
+    <meta name="description" content="Cybersecurity Learning Hub - Education, Training, and Resources">
+    <title>CyberHub | Cybersecurity Learning & Resources</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
-        <nav class="nav">
-            <a href="#" class="logo">M.</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="navbar-container">
+                <div class="navbar-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">◆</span>
+                        <span class="logo-text">CyberHub</span>
+                    </a>
+                </div>
+                
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <div class="nav-wrapper" id="navWrapper">
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <i class="fas fa-home"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item nav-item-dropdown">
+                            <a href="#" class="nav-link nav-link-dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-info-circle"></i>
+                                <span>About Us</span>
+                                <i class="fas fa-chevron-down dropdown-arrow"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#about" class="dropdown-link">Our Mission</a></li>
+                                <li><a href="#about" class="dropdown-link">Team</a></li>
+                                <li><a href="#about" class="dropdown-link">Ethics & Guidelines</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item nav-item-dropdown">
+                            <a href="#" class="nav-link nav-link-dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Threats</span>
+                                <i class="fas fa-chevron-down dropdown-arrow"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#work" class="dropdown-link">Malware</a></li>
+                                <li><a href="#work" class="dropdown-link">Social Engineering</a></li>
+                                <li><a href="#work" class="dropdown-link">Vulnerabilities</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item nav-item-dropdown">
+                            <a href="#" class="nav-link nav-link-dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-tools"></i>
+                                <span>Resources</span>
+                                <i class="fas fa-chevron-down dropdown-arrow"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#work" class="dropdown-link">Best Practices</a></li>
+                                <li><a href="#work" class="dropdown-link">Frameworks</a></li>
+                                <li><a href="#work" class="dropdown-link">Guidelines</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item nav-item-dropdown">
+                            <a href="#" class="nav-link nav-link-dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-book"></i>
+                                <span>Learning</span>
+                                <i class="fas fa-chevron-down dropdown-arrow"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#work" class="dropdown-link">Tutorials</a></li>
+                                <li><a href="#work" class="dropdown-link">Case Studies</a></li>
+                                <li><a href="#work" class="dropdown-link">Resources</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#work" class="nav-link">
+                                <i class="fas fa-blog"></i>
+                                <span>Blog</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">
+                                <i class="fas fa-envelope"></i>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
         <section class="hero">
             <div class="hero-content">
-                <p class="hero-greeting">Hello, I'm</p>
-                <h1 class="hero-name">Michael</h1>
-                <p class="hero-title">Cybersecurity Professional</p>
+                <p class="hero-greeting">Welcome to</p>
+                <h1 class="hero-name">CyberHub</h1>
+                <p class="hero-title">Cybersecurity Learning & Resources</p>
                 <p class="hero-description">
-                    Offensive Security Operator and Network Penetration Tester. 
-                    Currently pursuing CompTIA Security+ and Network+ certifications.
+                    Comprehensive cybersecurity education covering security principles, 
+                    best practices, and practical knowledge for professionals and learners.
                 </p>
                 <div class="hero-links">
-                    <a href="https://github.com/yates001990" target="_blank" rel="noopener noreferrer" class="link-btn">GitHub</a>
-                    <a href="mailto:Yates0@yahoo.com" class="link-btn">Email</a>
+                    <a href="#about" class="link-btn">Learn More</a>
+                    <a href="#work" class="link-btn">Explore Topics</a>
                     <a href="#contact" class="link-btn primary">Get in Touch</a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="images/pc-setup.jpg" alt="Custom Gaming PC Build" class="profile-photo">
+                <img src="images/pc-setup.jpg" alt="Cybersecurity Resources" class="profile-photo">
             </div>
         </section>
 
@@ -47,57 +133,55 @@
             <h2 class="section-title">About</h2>
             <div class="about-content">
                 <p>
-                    I'm a Computer Information Systems student with a primary focus on pursuing 
-                    <strong>Offensive Security Operations</strong> and <strong>Network Penetration Testing</strong>. 
-                    My work involves identifying vulnerabilities, securing infrastructure, and educating 
-                    others on cybersecurity best practices.
+                    CyberHub is a comprehensive learning resource dedicated to cybersecurity education 
+                    and awareness. We provide in-depth information on security principles, threat analysis, 
+                    and defensive practices for individuals and organizations.
                 </p>
                 <p>
-                    In my recent role, I supported a remote workforce of 2,000+ users by configuring 
-                    VPN access, troubleshooting connectivity issues, and ensuring secure authentication 
-                    protocols across the organization.
+                    Our mission is to empower professionals and students with the knowledge needed to 
+                    understand, identify, and mitigate security risks in today's digital landscape.
                 </p>
                 <div class="skills">
-                    <span class="skill">Penetration Testing</span>
                     <span class="skill">Network Security</span>
-                    <span class="skill">VPN Configuration</span>
-                    <span class="skill">Red Team Operations</span>
-                    <span class="skill">Vulnerability Assessment</span>
-                    <span class="skill">Firewall Management</span>
+                    <span class="skill">Threat Analysis</span>
+                    <span class="skill">Data Protection</span>
+                    <span class="skill">Security Awareness</span>
+                    <span class="skill">Risk Assessment</span>
+                    <span class="skill">Compliance</span>
                 </div>
             </div>
         </section>
 
         <section id="work" class="section work">
-            <h2 class="section-title">Selected Work</h2>
+            <h2 class="section-title">Topics</h2>
             <div class="projects">
                 <article class="project">
                     <div class="project-info">
-                        <h3 class="project-title">Cybersecurity Instructional Platform</h3>
+                        <h3 class="project-title">Network Security Fundamentals</h3>
                         <p class="project-description">
-                            Designed and launched an educational website covering penetration-testing 
-                            workflows, Red/Blue/Purple Team operations, and practical security examples. 
-                            The platform has been accessed by over 3,500 students and security professionals.
+                            Understanding network architecture, firewalls, intrusion detection systems, 
+                            and secure communication protocols. Learn how to protect your organization's 
+                            network infrastructure from unauthorized access.
                         </p>
                         <div class="project-tags">
-                            <span>Education</span>
-                            <span>Web Development</span>
-                            <span>Security Training</span>
+                            <span>Networking</span>
+                            <span>Firewalls</span>
+                            <span>IDS/IPS</span>
                         </div>
                     </div>
                 </article>
                 <article class="project">
                     <div class="project-info">
-                        <h3 class="project-title">Enterprise Network Infrastructure</h3>
+                        <h3 class="project-title">Threat Analysis & Mitigation</h3>
                         <p class="project-description">
-                            Configured comprehensive network infrastructure including routers, switches, 
-                            VLANs, and firewalls. Implemented segmentation strategies and security 
-                            best practices for enterprise-grade protection.
+                            Identify common threats, understand attack vectors, and implement effective 
+                            countermeasures. From malware to social engineering, learn how to recognize 
+                            and respond to security incidents.
                         </p>
                         <div class="project-tags">
-                            <span>Networking</span>
-                            <span>Infrastructure</span>
-                            <span>Security Architecture</span>
+                            <span>Threats</span>
+                            <span>Vulnerabilities</span>
+                            <span>Risk Management</span>
                         </div>
                     </div>
                 </article>
@@ -108,20 +192,21 @@
             <h2 class="section-title">Contact</h2>
             <div class="contact-content">
                 <p>
-                    Interested in working together or have a security challenge? 
-                    I'm always open to discussing new opportunities.
+                    Have questions about cybersecurity or need more information? 
+                    We're here to help. Get in touch with us today.
                 </p>
-                <a href="mailto:Yates0@yahoo.com" class="contact-email">Yates0@yahoo.com</a>
+                <a href="mailto:info@cyberhub.com" class="contact-email">info@cyberhub.com</a>
             </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2026 Michael. All Rights Reserved.</p>
+            <p>&copy; 2026 CyberHub. All Rights Reserved.</p>
             <div class="footer-links">
-                <a href="https://github.com/yates001990" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="mailto:Yates0@yahoo.com">Email</a>
+                <a href="#about">About</a>
+                <a href="#work">Topics</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     </footer>
